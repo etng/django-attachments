@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: django-attachments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-04 00:18+0200\n"
+"PO-Revision-Date: 2010-04-04 00:28+0100\n"
+"Last-Translator: YiBo <etng2004@gmail.com>\n"
+"Language-Team: en <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Language: zh_Hans\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:7
+msgid "Upload attachment"
+msgstr "上传附件"
+
+#: models.py:29
+msgid "creator"
+msgstr "上传人"
+
+#: models.py:30
+msgid "attachment"
+msgstr "附件"
+
+#: models.py:31
+msgid "created"
+msgstr "创建时间"
+
+#: models.py:32
+msgid "modified"
+msgstr "修改时间"
+
+#: views.py:33
+msgid "Your attachment was uploaded."
+msgstr "附件上传成功"
+
+#: views.py:51
+msgid "Your attachment was deleted."
+msgstr "附件删除成功"
+
+#: templates/attachments/add_form.html:7
+msgid "Add attachment"
+msgstr "添加附件"
+
+#: templates/attachments/delete_link.html:2
+msgid "Delete attachment"
+msgstr "删除附件"
+
