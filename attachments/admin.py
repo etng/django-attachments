@@ -12,5 +12,5 @@ class AttachmentInlines(GenericStackedInline):
     form = AttachmentForm
     exclude = ()
     extra = 1
-    verbose_name = _("Attachment")
-    verbose_name_plural = _("Attachments")
+    verbose_name = _("attachment")
+    verbose_name_plural = _("attachment")
