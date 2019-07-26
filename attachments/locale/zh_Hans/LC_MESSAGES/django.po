@@ -38,7 +38,7 @@ msgstr "修改时间"
 
 #: models.py:57
 msgid "{username} attached {filename}"
-msgstr "由{username}上传的附件{filename}"
+msgstr "{username}上传的附件{filename}"
 
 
 #: views.py:33
