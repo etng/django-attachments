@@ -33,12 +33,12 @@ class Attachment(models.Model):
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey('content_type', 'object_id')
-    creator = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        related_name="created_attachments",
-        verbose_name=_('creator'),
-        on_delete=models.CASCADE,
-    )
+    # creator = models.ForeignKey(
+    #     settings.AUTH_USER_MODEL,
+    #     related_name="created_attachments",
+    #     verbose_name=_('creator'),
+    #     on_delete=models.CASCADE,
+    # )
     attachment_file = models.FileField(
         _('attachment'), upload_to=attachment_upload
     )
@@ -55,7 +55,8 @@ class Attachment(models.Model):
 
     def __str__(self):
         return _('{username} attached {filename}').format(
-            username=self.creator.get_username(),
+            # username=self.creator.get_username(),
+            '',
             filename=self.attachment_file.name,
         )
 

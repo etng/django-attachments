@@ -79,7 +79,7 @@ def delete_attachment(request, attachment_pk):
     g = get_object_or_404(Attachment, pk=attachment_pk)
     if (
         request.user.has_perm('attachments.delete_attachment')
-        and request.user == g.creator
+        # and request.user == g.creator
     ) or request.user.has_perm('attachments.delete_foreign_attachments'):
         remove_file_from_disk(g.attachment_file)
         g.delete()
